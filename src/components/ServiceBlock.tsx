@@ -74,11 +74,11 @@ export default function ServiceBlock() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
           {servicesData.map((service, idx) => (
             <div
               key={service.id}
-              className="reveal flex flex-col bg-white overflow-hidden transition-all duration-300 relative group border-l-0 border-transparent hover:border-l-[3px] hover:border-crimson"
+              className="reveal flex flex-col h-full bg-white overflow-hidden transition-all duration-300 relative group border-l-0 border-transparent hover:border-l-[3px] hover:border-crimson"
               style={{ transitionDelay: `${idx * 150}ms` }}
             >
               {/* Service Cover Crop Container */}
